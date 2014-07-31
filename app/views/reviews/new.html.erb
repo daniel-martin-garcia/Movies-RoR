@@ -1,0 +1,25 @@
+<h1>FOMULARIO!!!</h1>
+
+<%= form_for [@movie, @review] do |f| %>
+	<%= f.label :reviewer %>
+	<div class="malditacaja">
+	<%= f.text_field :reviewer %></div>
+	<% if @review.errors[:reviewer].any? %>
+	<div class="juju">
+	<%= @review.errors[:reviewer] %></div>
+	<% end %>
+	<br>
+
+	<%= f.label :content %>
+	<div class="malditacaja">
+	<%= f.text_field :content %></div>
+	<% if @review.errors[:content].any? %>
+	<div class="juju">
+	<%= @review.errors[:content] %></div>
+	<% end %>
+
+	<br>
+
+	<%= f.submit 'Save' %>
+
+<% end %>
