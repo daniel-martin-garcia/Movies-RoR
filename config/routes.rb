@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/' => 'home#index'
+
   resources :movies do
     resources :reviews
     resources :cast_members

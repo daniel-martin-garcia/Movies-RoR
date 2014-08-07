@@ -4,12 +4,15 @@
 	<title></title>
 </head>
 <body>
-	<table>
-		<tr><td>Title</td><td>Poster</td></tr>
-		<% @movies.each do |movie| %>
+	<table class="table1">
+	<% @movies.each do |movie| %>
 		<tr>
-			<td><%= movie.title %></td>
-			<td><img src="<%= movie.poster %>"></td>
+			<td class="title2"><%= link_to(movie.title, movie_path(movie)) %></td>
+			
+			<td><img src="<%= movie.poster %>" class="poster"></td>
+
+			<td class="text2"><%= link_to('Reviews', movie_reviews_path(movie)) %></td>
+			
 		</tr>
 		<% end %>
 	</table>

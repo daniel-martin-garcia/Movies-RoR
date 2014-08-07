@@ -1,38 +1,31 @@
-<% content_for :header do %>
-	<h1><%= @movie.title %> </h1>
-<% end %>
+
 <% content_for :body do %>
-	<table>
+	<table class="table1">
 		<tr>
-		<td  class="title">Title</td>
-		<td > <%= @movie.title%> </td>
+		<td colspan="3" class="title"> <%= @movie.title%> </td>
 		</tr>
 
 		<tr>
-		<td class="title">Poster</td>
-		<td> <img src='<%= @movie.poster %>'> </td>
+		<td> <div class="div1"> </div></td>
+		<td>  <br> <img src='<%= @movie.poster %>' class="poster"> </td>
+		<td> <div class="div2"> </div></td>
 		</tr>
 
-		<tr>
-		<td class="title">Plot</td>
-		<td> <%= @movie.plot %> </td>
+		<tr> <td> </td>
+		<td class="text2"> <br> <%= @movie.plot %> </td>
+		<td> </td>
 		</tr>
-
-		<tr>
-		<td class="title">Year</td>
-		<td> <%= @movie.year %> </td>
-		</tr>
-
-		<tr>
-		<td class="title"> Cast</td>
-		<td>
+		<tr> <td> </td>
+		<td class="text3"> <br> <br>  <p id="casttitle">  CAST </p>
 			<% @movie.cast_members.each do |member| %>
 			<%= member.full_name + ', '%>
 			<% end %>
-		</td>
+		</td> <td> </td>
 		</tr>	
-		</table>
+	</table>
+	<div class="backbutton"> <%= link_to('Back to the future', '/movies') %> </div>
 <% end %>
+
 <!-- 
 # <% @movie.attributes.each #do |attr_name, attr_value| %>
 # 		<tr>

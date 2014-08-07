@@ -1,0 +1,12 @@
+<h1 class="title"> REVIEWS  <img src="http://img3.wikia.nocookie.net/__cb20130625200140/roblox/images/c/c7/Thumbs-Up-and-Down-1-.png" class="thumbs" /></h1>
+
+<table class="reviewtable">
+		<% @review.each do |review| %>
+		<tr>
+			<td class="username"><img src="http://heatherchristenaschmidt.files.wordpress.com/2011/09/facebook_no_profile_pic2-jpg.gif" class="profilepic"/>  @<%= review.reviewer %></td>
+			<td class="review">  <%= review.content %> </td>
+		</tr>
+
+		<% end %>
+</table>
+<div class="backbutton"> <%= link_to('Back to the future', '/movies') %> </div>

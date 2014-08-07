@@ -14,27 +14,182 @@
  *= require_self
  */
 
-body{
- 	margin: 0;
- }
-img {
-	max-width: 160px;
-	max-height: 240px;
+body {
+	background-color: #000000;
+	color: white;
+	font-family: "Verdana";
+	margin: 0px;
+	padding: 16px;
 }
-header, footer{
-	background-color: rgb(116, 116, 207);
-	width: 100%;
+td {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.h2 {
+	background-color: #0066CC;
+	text-align: right;
+	padding-right: 16px;
+	color: black;
+	
+}
+.h2:hover {
+	background-color: red
+}
+
+.table1 {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: black;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 30px;
+}
+.td1 {
+    text-align: center;
+    margin: auto;
+}
+.poster {
+	border: 10px solid black;
+	width: 160px;
+	height: 240px;
+	margin: auto;
+}
+
+.div1 {
+	width: 30px;
+	height: 30px;
+	float: left;
+	background-color: #CC6600;
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/TriangleArrow-Left.svg/461px-TriangleArrow-Left.svg.png);
+	background-size: 30px 30px;
+}
+.div1:hover {
+	width: 35px;
+	height: 35px;
+	float: left;
+	background-color: #663300;
+	background-size: 35px 35px;
+}
+.div2 {
+	width: 30px;
+	height: 30px;
+	float: right;
+	background-color: #CC6600;
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TriangleArrow-Right.svg/104px-TriangleArrow-Right.svg.png);
+	background-size: 30px 30px;
+}
+.div2:hover {
+	width: 35px;
+	height: 35px;
+	float: right;
+	background-color: #663300;
+	background-size: 35px 35px;
+}
+.backbutton {
+	width: 200px;
+	height: 50px;
+	background-color: #CC6600;
+	border-radius: 5px;
+	float: right;
+	padding-top: 20px;
+	padding-bottom: -8px;
+	text-align: center;
+	margin-top: 10px;
+	z-index: 10px;
+	text-decoration: none;
+}
+.backbutton:hover {
+	background-color: #663300;
+
+}
+.droids {
+	background-image: url(http://stream1.gifyo.com/pictures/1/large/6d7a0b9dfecbfecf3c2b85d0f55f3380-229483244.gif);
+	width: 40px;
+	height: 30px;
+}
+.profilepic {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.reviewtable {
+	border-radius: 5px;
+	background-color: white;
+	font-family: Verdana;
+	color: black;
+	margin-left: 40px;
+}
+.username {
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1em;
+	color: black;
+}
+.review {
+	font-size: 0.7em;
+	font-style: italic;
+	color: black;
+}
+.thumbs {
+	height: 2em;
+}
+#welcome {
+	height: 40px;
+	margin-left: 30%;
+	margin-right: auto;
+	margin-top: 10%;
+}
+.icon {
+	height: 25px;
+	width: 30px;
+
+}
+.text {
+	margin-top: 100px;
 	text-align: center;
 }
-.title{
-	font-weight: bold;
+.enter {
+	text-align: center;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: white;
+}
+
+.text3 {
+	font-size: 10px;
+	text-align: justify;
+}
+.text2 {
+	font-size: 15px;
+	text-align: justify;
+}
+.title {
+	font-family: Impact;
+	font-size: 40px;
+
+}
+#casttitle {
+	font-style: italic;
+	text-decoration: underline;
+}
+footer {
+	font-size: 10px;
+}
+.title2 {
 	font-size: 18px;
-
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
 }
-
-.offset3{
-	margin-left: 30px;
-}
-tr > td{
-	margin-left: 300px;
+a {
+	text-decoration: none;
+	color: black;
 }
